@@ -16,9 +16,15 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Hello',
       theme: ThemeData(
-        primarySwatch: Colors.blueGrey,
-        backgroundColor: Colors.blue,
+        primarySwatch: Colors.green,
+        backgroundColor: Colors.green,
         primaryColor: Colors.white,
+        primaryTextTheme: TextTheme(
+          headline6: TextStyle(
+            color: Colors.green,
+            fontSize: 16.0
+          )
+        )
       ),
       home: HomePage(),
     );
@@ -78,6 +84,7 @@ class _HomePageState extends State<HomePage> {
           preferredSize: Size.fromHeight(50.0), // here the desired height
           child: AppBar(
             title: _title,
+            centerTitle: true,
           )
         ),
       // appBar: AppBar(

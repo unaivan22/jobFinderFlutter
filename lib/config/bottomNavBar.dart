@@ -9,7 +9,7 @@ class Config {
         CustomIcons.stop,
       ),
       title: Text(
-        "Home",
+        "Jobs",
         style: new TextStyle(
           fontSize: 12.0,
           // color: Colors.yellow,
@@ -69,7 +69,7 @@ class Config {
   static BottomNavigationBar navigationBar = BottomNavigationBar(
     items: navigationBarItems,
     type: BottomNavigationBarType.fixed,
-    fixedColor: Colors.pink,
+    fixedColor: Colors.blue,
   );
 
 }
