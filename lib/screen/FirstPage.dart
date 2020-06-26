@@ -69,7 +69,11 @@ SizedBox _buildPopularListView() {
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.all(18.0),
-                  child: Text('Backend Web Developer'),
+                  child: Text('Backend Web Developer (Senior Level)',
+                    style: new TextStyle(
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(18.0),
@@ -79,7 +83,7 @@ SizedBox _buildPopularListView() {
                         alignment: Alignment.topLeft,
                         child: CircleAvatar(
                           backgroundImage: NetworkImage(
-                            'https://icon2.cleanpng.com/20180324/ziw/kisspng-google-logo-g-suite-google-5ab6f1f0b9e059.9680510615219389287614.jpg',
+                            'https://i1.sndcdn.com/avatars-000430386087-56qqez-t500x500.jpg',
                           ),
                           radius: 8.0,
                         ),
@@ -88,7 +92,7 @@ SizedBox _buildPopularListView() {
                         child: new Container(
                           padding: new EdgeInsets.only(left: 4.0),
                           child: new Text(
-                            'Google LLC',
+                            'Techinasia',
                             overflow: TextOverflow.ellipsis,
                             style: new TextStyle(
                               fontSize: 13.0,

@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:jobfinder/extensions/custom_icons.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 class Config {
 
   static List<BottomNavigationBarItem> navigationBarItems = [
     BottomNavigationBarItem(
       icon: Icon(
-        CustomIcons.stop,
+        CustomIcons.business_center,
       ),
       title: Text(
         "Jobs",
@@ -69,7 +70,7 @@ class Config {
   static BottomNavigationBar navigationBar = BottomNavigationBar(
     items: navigationBarItems,
     type: BottomNavigationBarType.fixed,
-    fixedColor: Colors.blue,
+    fixedColor: Hexcolor("#4EB152"),
   );
 
 }
