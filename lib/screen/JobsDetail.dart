@@ -135,7 +135,7 @@ TabController controller;
               child: TabBar(
               controller: controller,
                 tabs: <Widget>[
-                  new Tab(text: "Desciption",),
+                  new Tab(text: "Description",),
                   new Tab(text: "Company"),
                   new Tab(text: "Review",),
                   // new Tab(icon: new Icon(Icons.smartphone),text: "Smartphone",),
