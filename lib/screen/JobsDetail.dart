@@ -34,7 +34,7 @@ TabController controller;
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: Text('Backend Web Developer (Senior Level)'),
+        title: Text('Backend Web Developer NodeJS Specialis (Senior Level)'),
         centerTitle: true,
         actions: <Widget>[
           IconButton(
@@ -66,7 +66,7 @@ TabController controller;
                 image: new DecorationImage(
                   fit: BoxFit.cover,
                   image: new NetworkImage(
-                      "https://i1.sndcdn.com/avatars-000430386087-56qqez-t500x500.jpg")
+                      "https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png")
                 ),
                 boxShadow: [
                   BoxShadow(
@@ -87,7 +87,7 @@ TabController controller;
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         Text(
-                          'Techinasia Jakarta',
+                          'Google LLC',
                           style: TextStyle(
                             color: Colors.black87,
                             fontWeight: FontWeight.bold,

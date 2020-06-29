@@ -6,14 +6,19 @@ class Company extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child : new Center(
-        child: new Column(
-          children: <Widget>[
-            new Padding(padding: new EdgeInsets.all(20.0),),
-            new Text("Komuter", style: new TextStyle(fontSize: 30.0),),
-            new Padding(padding: new EdgeInsets.all(20.0),),
-            new Icon(Icons.computer, size:90.0,)
-          ],
-        ),)
+        child: new Container(
+          height: 160.0,
+          width: 240.0,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: NetworkImage(
+                  'https://i.ibb.co/2hRdZVJ/construction-site.png'),
+              fit: BoxFit.fill,
+            ),
+            // shape: BoxShape.circle,
+          ),
+        ),
+      )
     );
   }
 }

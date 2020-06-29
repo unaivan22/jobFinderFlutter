@@ -88,7 +88,7 @@ SizedBox _buildPopularListView() {
                         alignment: Alignment.topLeft,
                         child: CircleAvatar(
                           backgroundImage: NetworkImage(
-                            'https://i1.sndcdn.com/avatars-000430386087-56qqez-t500x500.jpg',
+                            'https://www.pngfind.com/pngs/m/84-847501_contact-us-google-app-logo-transparent-hd-png.png',
                           ),
                           radius: 8.0,
                         ),
@@ -97,7 +97,7 @@ SizedBox _buildPopularListView() {
                         child: new Container(
                           padding: new EdgeInsets.only(left: 4.0),
                           child: new Text(
-                            'Techinasia',
+                            'Google LLC',
                             overflow: TextOverflow.ellipsis,
                             style: new TextStyle(
                               fontSize: 13.0,
@@ -165,7 +165,7 @@ Widget _buildRecomendedListView() {
         ),
         ListView.builder(
       padding: EdgeInsets.only(top: 0),
-      itemCount: 40,
+      itemCount: 10,
       shrinkWrap: true,
       physics: ClampingScrollPhysics(),
       scrollDirection: Axis.vertical,
@@ -219,7 +219,7 @@ Widget _buildRecomendedListView() {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
-                          'UI/UX Designer (Senior Level)',
+                          'UI Designer (Senior Level)',
                           style: TextStyle(
                             color: Colors.black87,
                             fontWeight: FontWeight.bold,

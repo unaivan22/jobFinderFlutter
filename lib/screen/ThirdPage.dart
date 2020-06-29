@@ -36,7 +36,7 @@ Widget _buildSavedListView() {
         children: <Widget>[
           ListView.builder(
             padding: EdgeInsets.only(top: 0),
-            itemCount: 40,
+            itemCount: 1,
             shrinkWrap: true,
             physics: ClampingScrollPhysics(),
             scrollDirection: Axis.vertical,
