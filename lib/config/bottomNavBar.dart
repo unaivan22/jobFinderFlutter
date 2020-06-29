@@ -34,7 +34,7 @@ class Config {
         CustomIcons.bookmark_border, // grid_on 
       ),
       title: Text(
-        "Bookmarks",
+        "Saved",
         style: new TextStyle(
           fontSize: 12.0,
           // color: Colors.yellow,

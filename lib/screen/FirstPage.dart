@@ -1,19 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:jobfinder/screen/JobsDetail.dart';
 
 class FirstPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // if (isIos) {
-    //   return CupertinoPageScaffold(
-    //     navigationBar: CupertinoNavigationBar(middle: Text("Home"),),
-    //       child: Center(
-    //     child: Text("Home Page"),
-    //   ));
-    // } else {
     return Scaffold(
       body: Container(
-        padding: EdgeInsets.only(top: 20, bottom: 20),
+        padding: EdgeInsets.only(top: 20),
         color: Hexcolor('#F6F7FB'),
         child: Column(
           children: <Widget>[
@@ -44,7 +38,6 @@ class FirstPage extends StatelessWidget {
         ),
       ),
     );
-    // }
   }
 }
 
@@ -58,7 +51,16 @@ SizedBox _buildPopularListView() {
       itemBuilder: (context, index) {
         return Padding(
           padding: const EdgeInsets.symmetric(horizontal: 4.0, vertical: 4.0),
-          child: Container(
+          child: InkWell(
+            onTap: () {                          
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => JobsDetail(),
+                ),
+              );
+            }, 
+            child: Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10.0),
               color: Colors.white,
@@ -109,6 +111,7 @@ SizedBox _buildPopularListView() {
               ],
             ),
           ),
+        ),
         );
       },
     ),
@@ -166,14 +169,14 @@ Widget _buildRecomendedListView() {
       itemBuilder: (BuildContext context, int index) {
         return Material(
           child: InkWell(
-            // onTap: () {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //       builder: (context) => ChatDetails(),
-            //     ),
-            //   );
-            // },
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => JobsDetail(),
+                ),
+              );
+            },
             child: Container(
               color: Colors.white,
               margin: EdgeInsets.fromLTRB(0, 0, 5, 5),
