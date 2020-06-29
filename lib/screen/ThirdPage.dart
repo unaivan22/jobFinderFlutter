@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 // import 'package:flutter/cupertino.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:jobfinder/screen/JobsDetail.dart';
 
 class ThirdPage extends StatelessWidget {
   @override
@@ -42,14 +43,14 @@ Widget _buildSavedListView() {
             itemBuilder: (BuildContext context, int index) {
               return Material(
                 child: InkWell(
-                  // onTap: () {
-                  //   Navigator.push(
-                  //     context,
-                  //     MaterialPageRoute(
-                  //       builder: (context) => ChatDetails(),
-                  //     ),
-                  //   );
-                  // },
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => JobsDetail(),
+                      ),
+                    );
+                  },
                   child: Container(
                     color: Colors.white,
                     margin: EdgeInsets.fromLTRB(0, 0, 5, 5),

@@ -71,7 +71,10 @@ SizedBox _buildPopularListView() {
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.all(18.0),
-                  child: Text('Backend Web Developer (Senior Level)',
+                  child: Text('Backend Web Developer NodeJS Specialis (Senior Level)',
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 3,
+                  softWrap: false,
                     style: new TextStyle(
                       fontWeight: FontWeight.w500,
                     ),
